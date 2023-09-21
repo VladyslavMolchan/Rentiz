@@ -1,0 +1,26 @@
+@import '../css/_reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@600&family=Work+Sans:wght@400;500;600&display=swap');
+
+@import './header/header.scss';
+
+
+:root {
+  --bg-color: #121B25;
+  --accent-color: #1AA090;
+  --text-color: #d6d6d6;
+}
+
+body {
+  font-family: Work Sans, sans-serif;
+  background-color: var(--bg-color);
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+[class*="__container"] {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
