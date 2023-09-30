@@ -4,6 +4,8 @@
 
 @import './header/header.scss';
 @import './section_main/section_main.scss';
+@import './section__featured/featured.scss';
+@import './popular/popular.scss';
 
 
 :root {
@@ -26,6 +28,14 @@ body {
   max-width: 1450px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-size: clamp(1.875rem, 1.551rem + 1.62vw, 3rem);
+  font-weight: 600;
+  line-height: 1.26; 
+  text-transform: capitalize;
+  color: #fff;
 }
 
 

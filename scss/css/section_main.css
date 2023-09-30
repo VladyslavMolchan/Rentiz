@@ -1,11 +1,18 @@
 .hero {
   margin-top: clamp(1.25rem, 0.259rem + 4.95vw, 4.688rem);
+  position: relative;
+  padding-bottom: clamp(1.25rem, -0.011rem + 6.31vw, 5.625rem);
 }
 .hero .hero-deco {
   position: absolute;
-  bottom: -240px;
+  bottom: -150px;
   right: 0;
   z-index: -1;
+}
+@media (max-width: 576px) {
+  .hero .hero-deco {
+    height: 300px;
+  }
 }
 .hero__container {
   display: -webkit-box;

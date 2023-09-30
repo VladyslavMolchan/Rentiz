@@ -189,12 +189,19 @@
 
 .hero {
   margin-top: clamp(1.25rem, 0.259rem + 4.95vw, 4.688rem);
+  position: relative;
+  padding-bottom: clamp(1.25rem, -0.011rem + 6.31vw, 5.625rem);
 }
 .hero .hero-deco {
   position: absolute;
-  bottom: -240px;
+  bottom: -150px;
   right: 0;
   z-index: -1;
+}
+@media (max-width: 576px) {
+  .hero .hero-deco {
+    height: 300px;
+  }
 }
 .hero__container {
   display: -webkit-box;
@@ -390,6 +397,168 @@
   }
 }
 
+.featured {
+  padding-top: clamp(1.25rem, -0.011rem + 13vw, 5.625rem);
+  padding-bottom: clamp(1.875rem, -0.828rem + 13.51vw, 11.25rem);
+}
+.featured__box {
+  margin-top: clamp(1.875rem, 1.515rem + 1.8vw, 3.125rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+.featured__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.popular {
+  padding: clamp(1.875rem, -0.467rem + 11.71vw, 10rem);
+  background: url("../../assets/images/slider-bg.png") center center/cover no-repeat;
+}
+.popular__slider {
+  margin-top: 40px;
+  position: relative;
+}
+.popular__link {
+  text-align: center;
+  margin-top: 67px;
+}
+.popular__link a {
+  display: inline-block;
+  padding: 22px 42px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  -webkit-transition: property 0.2s;
+  transition: property 0.2s;
+}
+@media (any-hover: hover) {
+  .popular__link a:hover {
+    background-color: #15786c;
+  }
+}
+.popular-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 27px;
+}
+@media (max-width: 660px) {
+  .popular-slide {
+    text-align: center;
+  }
+}
+.popular-slide__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.26;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+.popular-slide__labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 660px) {
+  .popular-slide__labels {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.popular-slide__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1800px) {
+  .slider-buttons {
+    top: -100px;
+    right: 0;
+    width: auto;
+    gap: 30px;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: -130px;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: -130px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.popular-slider-btn {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: url("../../assets/images/icons/arrow-slider.svg") left 50% center no-repeat;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+@media (max-width: 1800px) {
+  .popular-slider-btn {
+    position: static;
+  }
+}
+@media (max-width: 671px) {
+  .popular-slider-btn {
+    display: none;
+  }
+}
+
 :root {
   --bg-color: #121B25;
   --accent-color: #1AA090;
@@ -410,6 +579,14 @@ body._lock {
   max-width: 1450px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-size: clamp(1.875rem, 1.551rem + 1.62vw, 3rem);
+  font-weight: 600;
+  line-height: 1.26;
+  text-transform: capitalize;
+  color: #fff;
 }
 
 .text {
