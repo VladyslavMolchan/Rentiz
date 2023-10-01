@@ -1,0 +1,33 @@
+.reviews {
+  position: relative;
+}
+.reviews .reviews-deco {
+  position: absolute;
+  top: -500px;
+  left: 0;
+  z-index: -1;
+}
+.reviews .reviews__container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.reviews__quotes {
+  width: clamp(2.813rem, 0.394rem + 12.09vw, 11.125rem);
+  padding-bottom: 7px;
+}
+.reviews__text {
+  max-width: 1003px;
+  font-size: clamp(1.25rem, 1.032rem + 1.09vw, 2rem);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.reviews__info {
+  margin-top: 40px;
+}
+.reviews__name {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.22px;
+  text-transform: capitalize;
+}
