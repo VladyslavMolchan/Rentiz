@@ -194,7 +194,7 @@
 }
 .hero .hero-deco {
   position: absolute;
-  bottom: -150px;
+  bottom: -170px;
   right: 0;
   z-index: -1;
 }
@@ -340,6 +340,7 @@
 }
 .block-filter__type {
   padding-right: 2px;
+  cursor: pointer;
 }
 .block-filter__icon {
   width: 10px;
@@ -918,7 +919,7 @@
   fill: #fff;
 }
 
-.links__footer__header {
+.links-footer__header {
   font-weight: 600;
   font-size: 26px;
   letter-spacing: 0.01em;

@@ -5,7 +5,7 @@
 
     .hero-deco {
       position: absolute;
-      bottom: -150px;
+      bottom: -170px;
       right: 0;
       z-index: -1;
       @media (max-width: 576px) {
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @media(max-width: 992px) {
       flex-direction: column;
     }
@@ -34,10 +35,10 @@
   
 
     &__title {
-font-size: clamp(1.875rem, 1.184rem + 3.45vw, 4.25rem);
-font-weight: 600;
-line-height: 1.26;
-text-transform: capitalize;
+      font-size: clamp(1.875rem, 1.184rem + 3.45vw, 4.25rem);
+      font-weight: 600;
+      line-height: 1.26;
+      text-transform: capitalize;
   }
 
     &__text {
@@ -129,6 +130,7 @@ text-transform: capitalize;
 
   &__type {
     padding-right: 2px;
+    cursor: pointer;
   }
 
   &__icon {
@@ -140,7 +142,6 @@ text-transform: capitalize;
         transform: rotate(180deg);
       }
   }
-
 
   &__velue {
     color: var(--bg-color);
@@ -185,5 +186,3 @@ text-transform: capitalize;
     }
   }
 }
-  .hero__img {
-  }
