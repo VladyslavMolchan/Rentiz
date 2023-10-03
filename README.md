@@ -1,4 +1,4 @@
-Link  [](https://vladyslavmolchan.github.io/Airpods/)
+Link  [https://vladyslavmolchan.github.io/Rentiz/](https://vladyslavmolchan.github.io/Rentiz/)
 
 ## I used :
 
